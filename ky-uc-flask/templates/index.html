@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ký Ức Lớp Mình - Chia sẻ ảnh</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>📸 Ký Ức Lớp Mình</h1>
+    <p>Cùng nhau lưu giữ những khoảnh khắc tuyệt vời ✨</p>
+  </header>
+
+  <main>
+    <section class="upload">
+      <form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <button type="submit">Tải ảnh lên</button>
+      </form>
+    </section>
+
+    <section class="gallery">
+      {% for image in images %}
+        <div class="photo">
+          <img src="{{ url_for('static', filename='uploads/' ~ image) }}" alt="Ảnh lớp">
+        </div>
+      {% endfor %}
+    </section>
+  </main>
+
+  <footer>
+    <p>💖 Lớp chúng mình - Mãi không quên</p>
+  </footer>
+</body>
+</html>

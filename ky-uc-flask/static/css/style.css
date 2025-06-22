@@ -1,0 +1,62 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  background: #fff8e1;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: #f9a825;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.upload {
+  margin: 20px;
+}
+
+.upload form {
+  background: #fffde7;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.upload input, .upload button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.upload button {
+  background: #fbc02d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.photo img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #f9a825;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
